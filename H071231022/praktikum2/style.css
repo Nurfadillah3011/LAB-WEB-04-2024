@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-around; /* Memastikan logo di kiri dan navigasi di kanan */
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    max-width: 50px; /* Sesuaikan ukuran logo sesuai kebutuhan */
+    height: auto;
+    margin-left: 10px; /* Berikan jarak antara teks logo dan gambar logo */
+}
+
+
+
+
+/* Navbar */
+.navbar {
+    background-color:rgba(115, 0, 0, 0.934);
+    color: rgba(73, 0, 0);
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.navbar .nav-links li {
+    margin-left: 20px;
+}
+
+.navbar .nav-links a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'UnifrakturMaguntia';
+}
+
+.logo-img {
+    width: 100px;  /* Sesuaikan ukuran lebar logo */
+    height: auto;  /* Agar tinggi logo menyesuaikan rasio */
+}
+
+
+/* Hero Section */
+.hero {
+    padding: 100px 0;
+    background-image: url('bc.jpg');
+    background-size: cover;
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    /* justify-content: flex-end; Mengarahkan konten ke sebelah kanan */
+}
+
+
+
+.hero-text {
+    color: white;
+    text-align: left; /* Mengatur teks agar rata kanan */
+    margin-right:100px; /* Mendorong elemen ke kanan */
+    max-width: 60%; /* Agar teks tidak terlalu melebar */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    font-family: 'UnifrakturMaguntia'; /* Ganti dengan font pilihan Anda */
+    color: #D62828; /* Pilihan warna yang kontras dan berani */
+    text-transform: uppercase;
+}
+
+.hero-text h2 {
+    font-size: 70px;
+    text-align: right;
+    margin-right: 100px; 
+    margin-left: 0px;
+}
+
+.hero-text h2 b {
+    color: red;
+}
+
+.hero-text h3{
+    font-size: 40px;
+    text-align: right;
+    margin-right: 100px;
+    margin-left: 0px;
+}
+
+.hero-text p {
+        font-size: 15px;
+        text-align: right;
+        margin-right: 100px;
+        margin-left: 0px;
+}
+
+
+/* About Section */
+.about {
+    padding: 100px 0;
+    background-image: url('labubu9.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+
+}
+
+.about-container{
+    /* text-align: left;   */
+    margin-right: -50px; /* Mendorong elemen ke kanan */
+    max-width: 60%; /* Agar teks tidak terlalu melebar */
+    text-shadow: white;
+    font-family: 'UnifrakturMaguntia'; /* Ganti dengan font pilihan Anda */
+    color: white; /* Pilihan warna yang kontras dan berani */
+    text-transform: uppercase;
+    font-size: 30px;
+    /* background-image: url('\ -2.jpg'); */
+
+    /* margin-left: 20px; */
+}
+
+.about h2 {
+    font-size: 70px;
+    text-align: left;
+    margin-right: 100px; 
+    margin-left: 0px;
+}
+
+.about p {
+    font-size: 17px;
+    text-align: left;
+    margin-right: 100px;
+    margin-left: 0px;
+}
+
+/* Gallery Section */
+.gallery {
+    padding: 100px ;
+    background-color: black;
+    width: 100%;
+}
+
+.gallery h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 5px;
+    overflow: hidden;
+    /* width: 300px; */
+    /* height: 100px; */
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    transition: transform 1200ms;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.2);
+}
+
+/* Footer */
+.footer {
+    background-color: black;
+    color: #fff;
+    padding: 40px 0;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-left img {
+    max-width: 50px;
+    height: auto;
+}
+
+.footer-right h3 {
+    margin-bottom: 15px;
+}
+
+.footer-right p {
+    margin-bottom: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+    }
+
+    .navbar .nav-links {
+        display: none;
+    }
+
+    .footer .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
