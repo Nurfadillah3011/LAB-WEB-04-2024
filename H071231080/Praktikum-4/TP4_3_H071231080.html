@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let hariAwal = prompt("Masukkan hari awal").toLowerCase()
+        let jumlahHari = parseInt(prompt("Masukkan jumlah hari"))
+        let hari = ["minggu", "senin", "selasa", "rabu", "kamis", "jumat", "sabtu"]
+        
+        function hitungHari(hariAwal, jumlahHari) {
+            let posisiAwal = hari.indexOf(hariAwal);
+            let posisiMasaDepan = (posisiAwal + jumlahHari) % 7;
+
+            if (posisiAwal === -1){
+                return "Hari tidak Valid";
+            }
+
+        return hari[posisiMasaDepan];
+        
+        }
+        let hasil = hitungHari(hariAwal, jumlahHari);
+        alert (jumlahHari + " hari setelah " + hariAwal + " adalah " + hasil);
+    </script>
+</body>
+</html> 

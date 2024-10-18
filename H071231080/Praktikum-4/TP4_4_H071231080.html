@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let angkaRandom = Math.floor(Math.random() * 100) + 1;
+        let jumlah = 0;
+
+        while (true) {
+            let inputan = parseInt(prompt("Masukkan angka random 1-100: "))
+
+            if (isNaN(inputan)) {
+                alert("Harap masukkan angka yang valid !");
+                continue;
+                
+            }
+
+            inputan = parseInt(inputan)
+            jumlah ++;
+            if (inputan < angkaRandom) {
+                alert("Terlalu rendah! Coba lagi.")
+                continue;
+            } else if (inputan > angkaRandom){
+                alert("Terlalu tinggi! Coba lagi.")
+                continue;
+            } else if (inputan === angkaRandom) {
+                alert("Selamat! kamu berhasil menebak angka " + angkaRandom + " dengan benar.\nSebanyak " + jumlah + "x percobaan." )
+                break;
+                
+            } 
+        }
+    </script>
+</body>
+</html>
