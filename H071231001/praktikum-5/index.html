@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BlackJack</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/x-icon" href="images/icon.png" />
+</head>
+
+<body>
+  <!-- Navbar di bagian atas -->
+  <div class="navbar">
+    <button id="btn-start-game">Start Game</button>
+    <button id="btn-hit">Hit</button>
+    <button id="btn-stay">Stay</button>
+  </div>
+
+  <!-- Konten Utama -->
+  <div class="main-content">
+    <h1>Welcome To Blackjack Game</h1>
+    <h3>Main Sampai Kaya Raya!!</h3>
+
+    <!-- Kartu Bot dan Pemain -->
+    <div class="container">
+      <div>
+        <h2>Bot Cards:</h2>
+        <div class="bot-cards">
+          <img class="hidden-card" src="./images/cards/BACK.png" alt="" />
+        </div>
+      </div>
+      <div>
+        <h2>Your Cards:</h2>
+        <div class="my-cards"></div>
+      </div>
+    </div>
+
+    <!-- Skor Bot dan Pemain -->
+    <div class="sums-container">
+      <h2>Bot Sums: <span class="bot-sums"></span></h2>
+      <h2>Your Sums: <span class="my-sums"></span></h2>
+    </div>
+
+    <!-- Jumlah Uang -->
+    <h4>Jumlah uang anda: Rp. <span id="my-money">5000</span></h4>
+    <input type="number" placeholder="Masukkan jumlah taruhan" required  />
+    <p id="result"></p>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+
+</html>
