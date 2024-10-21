@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Praktikum 4</title>
+  </head>
+  <body style="background-color: black">
+    <script>
+        // Nomor 1
+        let angkaGenap = [];
+        function countEvenNumbers(x,y) {
+          if(x > y){
+            return "Inputan Salah!, x harus lebih kecil dari y";
+          }else{
+            for (let i = x; i <= y; i++){
+                if (i%2 == 0){
+                    angkaGenap.push(i);       
+                }   
+            }
+            return "Output : " + angkaGenap.length +"("+ angkaGenap +")";
+          }
+        }
+
+        console.log(countEvenNumbers(1,10));
+
+
+        // Nomor 2
+        let harga = prompt("Masukkan Harga barang: ");
+        let jenis = prompt("Masukkan Jenis barang (Eletronik, Pakaian, Makanan, Lainnya): ");
+        let hargaSetelahDiskon = 0;
+        let diskon = "";
+        let adaJenis = true;
+
+        if (jenis.toLowerCase() == "eletronik") {
+            hargaSetelahDiskon = 0.9 * harga;
+            diskon = "10%";
+        } else if (jenis.toLowerCase()  == "pakaian") {
+            hargaSetelahDiskon = 0.8 * harga;
+            diskon = "20%";
+        } else if (jenis.toLowerCase()  == "makanan") {
+            hargaSetelahDiskon = 0.95 * harga;
+            diskon = "5%";
+        } else if (jenis.toLowerCase() == "lainnya") {
+            hargaSetelahDiskon = harga;
+            diskon = "Tidak ada";
+        }else {
+            adaJenis = false;
+        }
+
+        if (adaJenis == false) {
+            console.log("Jenis barang tidak sesuai");
+        } else {
+            console.log("Harga awal: Rp" + harga);
+            console.log("Diskon: " + diskon);
+            console.log("Harga setelah diskon: RP" + hargaSetelahDiskon);
+        }
+
+
+        // // Nomor 3
+        const hari = ["senin", "selasa", "rabu", "kamis", "jumat", "sabtu", "minggu"];
+
+        let hariIni = prompt("Masukkan hari ini: ").toLowerCase();
+        let cekHari = prompt("Anda ingin mengetahui berapa hari kedepan? ");
+        let indexHari = hari.indexOf(hariIni);
+        let hariValid = false;
+
+        for (let i = 0; i < hari.length; i++) {
+            if(hari[i] == hariIni.toLowerCase()) {
+                hariValid = true;
+                let cekHari2 = (parseInt(indexHari) + parseInt(cekHari)) % 7;          
+                console.log(cekHari + " hari kedepan adalah " + hari[cekHari2]);
+                break;
+            }
+        }
+        if (!hariValid) {
+            console.log("Hari " + hariIni + " bukan hari yang valid");
+        }
+
+        
+        // Nomor 4
+        const angka = Math.floor(Math.random() * 100) + 1;
+        let angkaTebakan = prompt("Masukkan salah satu dari angka 1 sampai 100: (angka acak = " + angka + ")" );
+        let percobaan = 1;
+
+        while (angkaTebakan != angka) {
+            if (angkaTebakan > angka) {
+            percobaan += 1;
+            console.log("Terlalu tinggi! Coba lagi.");
+            angkaTebakan = prompt("Terlalu tinggi! Coba lagi.\nMasukkan salah satu dari angka 1 sampai 100: (angka acak = " + angka + ")");
+            } else if (angkaTebakan < angka) {
+            percobaan += 1;
+            console.log("Terlalu rendah! Coba lagi.");
+            angkaTebakan = prompt("Terlalu rendah! Coba lagi.\nMasukkan salah satu dari angka 1 sampai 100: (angka acak = " + angka + ")");
+            }
+        }
+        console.log("Selamat! Kamu berhasil menebak angka " + angka + " dengan benar.");
+        console.log("Sebanyak " + percobaan + "x percobaan.");
+    </script>
+  </body>
+</html>

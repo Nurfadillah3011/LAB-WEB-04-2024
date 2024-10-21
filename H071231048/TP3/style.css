@@ -1,0 +1,371 @@
+/* navbar */
+.navbar{
+    position: relative;
+    z-index: 1;
+    position: fixed ;
+    top: 0;
+    width: 100%;
+}
+.navbar-brand {
+    font-family: Viga;
+    font-size: 32px;
+}
+
+.nav-link{
+    text-transform: uppercase;
+    margin-right: 30px;
+    font-family: Viga;
+    color: #ffffff;
+}
+
+/* jumbotron */
+.jumbotron{
+    background-image: url('K2-transformed.jpeg');
+    background-size: cover;
+    height: 1000px;
+    position: relative;
+}
+
+.jumbotron .container{
+    position: relative;
+    z-index: 1;
+}
+
+.jumbotron h1.display-4 {
+    text-align: center;
+    color: white;
+    position: absolute; 
+    margin-bottom: 200px;
+    margin-top: 380px; 
+    margin-left: 350px;
+    font-size: 90px; 
+    font-family: Asar;
+    font-weight: 200px;
+    text-shadow: 1px 1px 1px rgba(0,0,0, 0.7);
+}
+
+
+/* gradasi */
+.jumbotron::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0));
+    position: absolute;
+    bottom: 0;
+}
+
+
+.jumbotron .tombol {
+    display: inline-block;
+    margin-top: 330px; 
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: 500;
+    position: relative; 
+}
+
+.jumbotron img.img-fluid{
+    margin-top: 220px;
+    margin-left: 360px;
+
+}
+
+/* utility */
+.tombol{
+    text-transform: uppercase;
+    border-radius: 40px;
+}
+
+.info-panel {
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+    margin-top: -90px;
+    background-color: white;
+    padding: 20px;
+    width: 80%;
+    position: relative; 
+    z-index: 10; 
+    max-height: 300px; /* Batas tinggi agar panel tidak bertambah terlalu besar */
+    overflow: hidden; /* Potong konten jika lebih dari batas panel */
+}
+
+.info-panel img {
+    width: 120px;
+    height: 120px;
+    margin-left: 50px;
+    margin-bottom: 10px;
+}
+
+.info-panel h4{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-left:40px ;
+
+}
+
+.info-panel .col-lg {
+    display: flex;
+    align-items: center; 
+}
+
+.carousel {
+    margin-top: -80px; /* menaikkan carousel ke atas */
+}
+
+.carousel-caption {
+    background-color: rgba(25, 24, 24, 0.559); 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+    text-align: center; 
+    z-index: 1; 
+    padding: 20px; 
+    color: white; 
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); 
+}
+
+.carousel-caption img{
+    width: 100%;
+    height: auto;
+}
+
+
+.carousel-caption h2 {
+    font-size: 36px; 
+    justify-content: center;
+    margin-top: 200px;
+}
+
+.carousel-caption p {
+    font-size: 18px; 
+}
+
+.carousel::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient( rgba(0,0,0,1), rgba(0,0,0,0));
+    position: absolute;
+    bottom: 0;
+    z-index: 0;
+}
+
+form {
+    max-width: 400px; 
+    margin: auto; 
+    padding: 20px; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1); 
+    background-color: #f9f9f9; 
+}
+
+.form-control {
+    transition: border-color 0.3s ease; /* Animasi transisi border */
+}
+
+.form-control:focus {
+    border-color: #007bff; /* Warna border saat fokus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Bayangan saat fokus */
+}
+
+.btn-primary {
+    width: 100%; /* Tombol mengisi lebar form */
+    padding: 10px; /* Menambahkan padding */
+}
+
+
+.footer {
+    background-color:black;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.footer-right h3 {
+    margin-bottom: 15px;
+    color: white;
+}
+
+.footer-right span{
+    color: red;
+}
+
+
+.Popup a img {
+    width: 20px;
+    box-shadow: 0 1px 10px rgb(255, 255, 255);
+  }
+  .Popup {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    gap: 10px;
+  }
+
+.hasatu {
+    color: white;
+    text-align: center;
+    justify-content: center;
+    
+
+}
+
+.btn-primary{
+    font-family: viga;
+}
+
+
+
+/* destop */
+@media (min-width: 992px){
+    .navbar-brand, .nav-link {
+        color: white !important;
+        text-shadow: 1px 1px 1px rgba(0,0,0, 0.7);
+        
+    }
+    
+    .nav-link{
+        text-transform: uppercase;
+        margin-right: 30px;
+    }
+
+    .nav-link:hover::after{
+        content: '';
+        display: block;
+        border-bottom: 3px solid #0B63DC;
+        width: 50%;
+        margin: auto;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+    }
+
+    .jumbotron{
+        margin-top: -75px;
+    }
+
+    .jumbotron h1.display-4{
+        font-size: 65px; 
+    }
+
+
+}
+
+/* mobail */
+@media (max-width: 768px) {
+    .nav-item{
+        font-size: 24px;
+    }
+
+    .jumbotron img.img-fluid{
+        margin-top: 120px;
+        margin-left: 90px;
+    }
+    .jumbotron {
+        padding-top: 100px; 
+        padding-bottom: 30px;
+        height: auto; 
+    }
+
+    .jumbotron h1.display-4 {
+        font-size: 50px;
+        margin-top: 300px;
+        margin-left: 130px;
+    }
+
+
+    .jumbotron .tombol {
+        font-size: 14px; 
+    }
+
+    .carousel {
+        margin-top: -230px; /* menaikkan carousel ke atas */
+    }
+
+    .info-panel {
+        position: absolute; /* Agar panel naik di atas konten lain */
+        top: 600px; /* Atur jarak dari atas sesuai kebutuhan */
+        left: 50%; /* Agar tetap di tengah */
+        transform: translateX(-50%); /* Menggeser agar tetap di tengah secara horizontal */
+        margin-top: 0; /* Menghapus margin negatif */
+        z-index: 10; /* Tetap di atas elemen lain */
+        width: 50%; /* Atur ulang lebar untuk responsivitas */
+    }
+
+    .info-panel img{
+        width: 80px;
+        height: 80px;
+    }
+
+    .carousel{
+        margin-top: -10px;
+    }
+    .carousel-caption p {
+        font-size: 16px;
+        color: #ffffff;
+    }
+
+    .carousel-caption h2{
+        font-size: 24px;
+        color: white;
+    }
+
+    .carousel-caption {
+        background-color: rgba(25, 24, 24, 0.559); /* Tambahkan latar belakang transparan agar teks terlihat */
+        color: #fefdfd; /* Pastikan warna teks cukup kontras dengan latar belakang */
+        padding: 10px; /* Tambahkan padding untuk spasi */
+        border-radius: 8px;
+        max-width: 80%;
+        margin: 0 auto;
+        bottom: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .jumbotron {
+        background-size: cover; 
+        height: 300px; 
+    }
+
+    .jumbotron img.img-fluid{
+        margin-top: -100px;
+        margin-left: 10px;
+        box-sizing: border-box ;
+        width: 40%;
+        height: auto;
+    }
+
+    .jumbotron h1.display-4 {
+        font-size: 32px;    
+        margin-top: -40px;
+        margin-bottom: 90px;
+        font-size: 20px;
+        margin-left: 20px;
+    }
+
+    .jumbotron .tombol {
+        font-size: 14px;
+        margin-top: 20px;
+        width: 148px;
+        height: 38px;
+    }
+
+}

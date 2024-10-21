@@ -1,0 +1,22 @@
+#services img{
+    height: 150px;
+}
+
+/* Menambahkan margin-top untuk alert */
+.alert-custom {
+    margin-top: 70px; /* Sesuaikan dengan tinggi navbar */
+}
+
+.custom-bg{
+    background: rgb(0, 0, 0);
+background: linear-gradient(180deg, rgb(45, 36, 94) 0%, rgb(0, 0, 0) 69%);
+}
+
+.custom-bg1 {
+    background: rgb(0, 0, 0);
+background: linear-gradient(0deg, rgb(45, 36, 94) 0%, rgb(0, 0, 0) 69%);
+}
+
+.custom-btn {
+    background-color: #2d3debf6;
+}

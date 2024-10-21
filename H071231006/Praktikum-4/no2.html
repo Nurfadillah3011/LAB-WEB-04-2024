@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>No 2</title>
+</head>
+<body>
+    <script>
+        function calculatePrice() {
+            const price = (prompt("Masukkan harga barang:"));
+
+            if(isNaN(price)) {
+                window.alert("Angka tidak valid.");
+                return;
+            }
+
+            const itemType = prompt("Masukkan jenis barang (Elektronik, Pakaian, Makanan, Lainnya):").toLowerCase();
+        
+            let discount = 0;
+        
+            switch (itemType) {
+                case 'elektronik':
+                    discount = 10;
+                    break;
+                case 'pakaian':
+                    discount = 20;
+                    break;
+                case 'makanan':
+                    discount = 5;
+                    break;
+                case 'lainnya':
+                    discount = 0;
+                    break;
+                default:
+                    alert("Jenis barang tidak valid.");
+                    return;
+            }
+        
+
+            const discountAmount = (discount / 100) * price;
+            const finalPrice = price - discountAmount;
+    
+            console.log(`Harga awal: Rp${price}`);
+            console.log(`Diskon: ${discount}%`);
+            console.log(`Harga setelah diskon: Rp${finalPrice}`);
+        }
+        
+        
+        calculatePrice();
+        
+    </script>
+</body>
+</html>

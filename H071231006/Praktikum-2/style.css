@@ -1,0 +1,201 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar styling */
+nav {
+    position: sticky;
+    top: 0;
+    background-color: #6e0000;
+    padding: 10px;
+    text-align: center;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 5px 10px;
+    transition: color 0.s ease, border-bottom 1.5s ease;
+}
+
+nav ul li a:hover{
+    color: #f8f79f;
+    border-bottom: 2px solid #f8f79f;
+}
+
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: #f8f7cc;
+}
+
+.hero-text {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.hero h1 {
+    font-size: 50px;
+    color:#000000;
+}
+
+.hero h2 {
+    font-size: 25px;
+    margin: 10px 0;
+    color: #000000;
+}
+
+.hero p {
+    font-size: 18px;
+    color:#000000;
+    padding: 10px;
+}
+
+.hero-image {
+    flex: 1;
+}
+
+.hero-image img {
+    max-width: 90%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+    /* position: relative; */
+    border-radius: 10px;
+}
+
+.hero-image img:hover {
+    transform: scale(1.1);
+}
+
+/* About Section */
+.about {
+    padding: 40px;
+    background-color: #f8f7cc;
+}
+
+.about h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-text {
+    width: 48%; /*membuat kolom kiri dan kanan */
+    font-size: 18px;
+    color: #000000;
+    text-align: justify; /* agar teks rata kiri dan kanan */
+    margin-bottom: 15px;
+}
+
+/* Gallery Section */
+.gallery {
+    padding: 40px;
+    background-color: #f8f7cc;
+    text-align: center;
+}
+
+.gallery h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.gallery-images {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px; 
+}
+
+.gallery-images img {
+    width: 30%;
+    margin-bottom: 8px;
+    transition: transform 0.3s ease-in-out;
+    position: relative;
+}
+.gallery-images img:hover {
+    transform: scale(1.1);
+}
+
+/* Responsive behavior */
+@media (max-width: 768px) {
+    .gallery-images img {
+        width: 45%; /* untuk layar kecil, 2 gambar per baris */
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-images img {
+        width: 100%; /* pada layar sangat kecil, gambar ditampilkan satu per baris */
+    }
+}
+
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(46, 46, 46);
+    color: white;
+}
+
+.footer-left img {
+    width: 40px;
+}
+
+.footer-right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#contact {
+    display: flex; 
+}
+
+.contact-left, .contact-right {
+    margin-right: 20px;
+}
+
+.contact-left {
+    margin-right:30px;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .gallery-images img {
+        max-width: 100%;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}

@@ -1,0 +1,93 @@
+body {
+  text-align: center;
+  background-image: url(images/row.jpg);
+  background-position: center;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-size: 20px;
+}
+
+h1 {
+  font-size: 40px;
+  color: #042c01;
+  position: relative;
+  top: -88px;
+}
+
+h3 {
+  font-size: 25px;
+  color: #052f02;
+  position: relative;
+  top: -115px;
+}
+
+h2 {
+  font-size: 25px;
+  color: #afe7af;
+}
+
+h4 {
+  font-size: 20px;
+  color: #afe7af;
+  position: relative;
+  top: -5px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(29, 53, 37, 0.711);
+  padding: 10px;
+  width: 100%;
+  z-index: 100;
+  position: sticky;
+  top: 0;
+}
+
+.navbar button {
+  width: 150px;
+  font-size: 16px;
+  margin: 5px;
+  color: #afe7af;
+  background-color: #435a3c;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50px;
+}
+
+.navbar button:hover {
+  background-color: #406927;
+}
+
+.main-content {
+  margin-top: 100px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 50px;
+}
+
+.bot-cards img,
+.my-cards img {
+  width: 150px;
+  margin: 5px;
+}
+
+.sums-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 50px;
+}
+
+#my-money {
+  margin-top:320px;
+}
+

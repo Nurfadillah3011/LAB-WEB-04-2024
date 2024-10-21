@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP4_4</title>
+</head>
+<body>
+    <script>
+        const minNum = 1;
+        const maxNum = 100;
+        const answer = Math.floor(Math.random() * (maxNum - minNum + 1)) + minNum;
+
+        let attempts = 0;
+        let guess;
+        let running = true;
+
+        console.log("Jawaban yang benar adalah: " + answer);
+
+        while(running){
+            guess = window.prompt(`Masukkan salah satu dari angka ${minNum} - ${maxNum}`);
+            console.log("Masukkan salah satu dari angka 1 sampai 100: " + guess);
+            guess = Number(guess);
+
+            if(isNaN(guess)) {
+                window.alert("Masukkan angka yang valid");
+                console.log("Input tidak valid: bukan angka");
+            }
+            else if(guess < minNum || guess > maxNum) {
+                window.alert(`Masukkan angka yang valid antara ${minNum} - ${maxNum}`);
+                console.log(`Input tidak valid: angka di luar rentang ${minNum} - ${maxNum}`);
+            }
+            else{
+                attempts++;
+                if(guess < answer) {
+                    window.alert("Terlalu rendah! Coba lagi!");
+                    console.log("Terlalu rendah! Coba Lagi");
+                }
+                else if(guess > answer) {
+                    window.alert("Terlalu tinggi! Coba lagi!");
+                    console.log("Terlalu Tinggi! Coba Lagi");
+                }
+                else{
+                    window.alert(`Selamat! Kamu berhasil menebak angka dengan benar. Sebanyak ${attempts} percobaan`);
+                    console.log(`Selamat! kamu berhasil menebak angka ${answer} dengan benar. Sebanyak ${attempts}x percobaan`);
+                    running = false;
+                }
+            }
+        }
+    </script>
+</body>
+</html>

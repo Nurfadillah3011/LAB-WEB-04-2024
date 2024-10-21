@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="TP3_H071231001.css">
+    <title>Burger Hut</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top py-3">
+        <div class="container">
+            <a href="#" class="navbar-brand">Juicy Bites</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="#Menu" class="nav-link">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#Order" class="nav-link">Pemesanan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Kontak Kami</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <section class="custom-bg text-dark text-center text-sm-start pt-5 pb-5 pb-lg-0 mt-5">
+        <div class="container">
+            <div class="d-flex align-items-center">  
+                <div>
+                    <h1 class="text-white">Selamat Datang di <span class="text-primary">Juicy Bites</span></h1>
+                    <p class="lead text-white"> Temukan Kenikmatan Sempurna di Setiap Gigitan </p>
+                    <button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#infoModal">
+                        Explore Our Menu
+                    </button>
+
+                    <div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="infoModalLabel">Our Menu</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Selamat datang di Juicy Bites, rumah bagi burger lezat yang siap memanjakan lidah Anda! Kami berdedikasi untuk menyajikan burger berkualitas premium dengan bahan-bahan segar dan pilihan terbaik. Dengan setiap gigitan, kami ingin Anda merasakan perpaduan sempurna antara rasa, tekstur, dan kenikmatan. <br> <br>
+                                    <span class="text-danger">Pilih dari menu kami, buat pesananmu, dan siapkan diri untuk merasakan burger lezat yang diantar langsung ke pintu rumahmu.</span>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                                    <button type="button" class="btn btn-primary">Lanjutkan</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <img class="img-fluid w-50 d-none d-sm-block" src="assets/burger bg.png" alt="header">  
+            </div>
+        </div>
+    </section>
+
+    <!-- menu -->
+    <section class="p-5 custom-" id="Menu">
+        <div class="container">
+            <h2 class="text-center text-white mb-4">Best Menu</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="assets/burger melt.jpeg" class="card-img-top" alt="BestMenu1">
+                        <div class="card-body">
+                            <h5 class="card-title">Double Melt Burger</h5>
+                            <p class="card-text">Double Melt Burger menawarkan sensasi kelezatan yang tak tertandingi. Dengan dua lapisan daging sapi yang juicy dan dipanggang sempurna, setiap gigitan memberikan rasa yang memuaskan. Ditambah dengan dua lapisan keju meleleh yang creamy!.</p>
+                            <a href="#Order" class="btn btn-primary">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="assets/Octopus Burger.jpeg" class="card-img-top" alt="BestMenu2">
+                        <div class="card-body">
+                            <h5 class="card-title">Octopus Burger</h5>
+                            <p class="card-text">Terbuat dari potongan gurita segar yang dibakar hingga sempurna. Disajikan dengan saus spesial, sayuran segar, dan bumbu yang menggugah selera, burger ini menawarkan pengalaman baru yang menggoda bagi pencinta makanan laut!.</p>
+                            <a href="#Order" class="btn btn-primary">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="Assets/shrimp burger.jpeg" class="card-img-top" alt="BestMenu3">
+                        <div class="card-body">
+                            <h5 class="card-title">Shrimp Burger</h5>
+                            <p class="card-text">Terbuat dari udang segar yang diolah menjadi patty renyah dan juicy. Disajikan dalam roti lembut dengan saus tartar khas, sayuran segar, dan bumbu pilihan, burger ini adalah pilihan sempurna bagi pecinta seafood yang ingin merasakan cita rasa baru!
+
+                            </p>
+                            <a href="#Order" class="btn btn-primary">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pemesanan -->
+    <section class="custom-bg text-light p-5" id="Order">
+        <div class="container">
+            <h3 class="text-center">Pesan Sekarang!</h3>
+            <p class="text-center mb-4">Nikmati burger lezat kami dengan mudah. Isi formulir di bawah ini untuk melakukan pemesanan!</p>
+            
+            <div class="input-group mt-3">
+                <input type="text" class="form-control" placeholder="Masukkan Nama Anda">
+            </div>
+            
+            <div class="input-group mt-3">
+                <input type="email" class="form-control" placeholder="Masukkan Alamat Anda">
+            </div>
+            
+            <div class="input-group mt-3">
+                <input type="text" class="form-control" placeholder="Masukkan Nomor Telepon">
+            </div>
+            
+            <div class="input-group mt-3">
+                <textarea class="form-control" placeholder="Pesan atau Catatan Tambahan" rows="3"></textarea>
+            </div>
+    
+            <div class="input-group mt-3">
+                <select class="form-control">
+                    <option value="">Pilih Menu</option>
+                    <option value="double_melt">Double Melt Burger</option>
+                    <option value="Octopus">Octopus Burger</option>
+                    <option value="shrimp">Shrimp Burger</option>
+                </select>
+            </div>
+    
+            <button class="btn custom-btn btn-lg mt-4 text-light" type="button">Pesan Sekarang</button>
+        </div>
+    </section>
+    
+
+    <!-- Kontak Kami -->
+    
+
+    <!-- Footer -->
+    <footer class="p-5 bg-dark text-white text-end position-relative">
+        <section class="top-0 text-end " id="contact">
+            <div class="container">
+                        <h3 class="text-end mb-4 bg-dark">Kontak Kami</h3>
+                        <ul class="list-group-flush lead bg-dark text-end ">
+                            <li class="list-group-item bg-dark text-light fs-6">
+                                <i class="bi bi-geo-alt"></i>
+                                <span class="fw-bold">Lokasi:</span>
+                                <br> Jl. Tupai No.12
+                            </li>
+                            <li class="list-group-item bg-dark text-light fs-6">
+                                <i class="bi bi-telephone"></i>
+                                <span class="fw-bold">Telepon:</span>
+                                <br> 0812-30705-0508
+                            </li>
+                            <li class="list-group-item bg-dark text-light fs-6">
+                                <i class="bi bi-instagram"></i>
+                                <span class="fw-bold">Instagram:</span>
+                                <br>@JuicyBites_
+                            </li>
+                            <li class="list-group-item bg-dark text-light fs-6">
+                                <i class="bi bi-envelope"></i>
+                                <span class="fw-bold">E-Mail:</span>
+                                <br>JuicyBites07@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        <div class="container">
+            <p class="lead text-start">Copyright &copy; 2024 Burger Hut</p>
+           
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+</html>
